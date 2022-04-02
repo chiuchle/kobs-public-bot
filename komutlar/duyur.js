@@ -7,8 +7,8 @@ exports.run = function (client, message, args) {
   if(!duyurumetni) return message.channel.send(":loudspeaker: Hata duyuru metni yazmalısınız!");
   message.delete();
   message.channel.send(":mega: Başarıyla duyuruldu!");
-    kanal.createWebhook("Kobs Duyuru", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYMTbkB9kOpUs75-FNXeqPMMMXmXhdD22Rb4VXRtVKyrUWgnHz")
-    .then(webhook => webhook.edit("Kobs Duyuru", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYMTbkB9kOpUs75-FNXeqPMMMXmXhdD22Rb4VXRtVKyrUWgnHz")
+    kanal.createWebhook("Valencia Duyuru", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYMTbkB9kOpUs75-FNXeqPMMMXmXhdD22Rb4VXRtVKyrUWgnHz")
+    .then(webhook => webhook.edit("Valencia Duyuru", "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQYMTbkB9kOpUs75-FNXeqPMMMXmXhdD22Rb4VXRtVKyrUWgnHz")
         .then(wb => {
             const duyurucuPing = new Discord.WebhookClient(wb.id, wb.token);
             duyurucuPing.send( duyurumetni + "\n@everyone")
