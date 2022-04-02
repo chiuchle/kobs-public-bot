@@ -163,7 +163,7 @@ if (kurulus < 1296000000) kontrol = ' **__Bu Hesap Güvenilir Değil__** '
 if (kurulus > 1296000000) kontrol = ' **__Bu Hesap Güvenilir Gözüküyor__** '
   moment.locale("tr");
   let kobs = client.channels.get(kanal);
-kobs.send("**Hoşgeldin! " + member + " Seninle __\`" + member.guild.memberCount + "\`__ Kişiyiz \n\n  Sunucuya Kayıt Olmak İçin #kayıt-chat'a İsim Yaş Yazınız ! \n\n  Kayıt Sorumlusu Rolündeki yetkililer sizinle ilgilenicektir  \n\n  Hesabın Oluşturulma Tarihi:** " + moment(member.user.createdAt).format("YYYY **__DD MMMM dddd (hh:mm:ss)__**") +  "  \n\n"  + kontrol + " \n\n"  
+kobs.send("**Hoşgeldin! " + member + " Seninle __\`" + member.guild.memberCount + "\`__ Kişiyiz \n\n  Sunucuya Kayıt Olmak İçin #💀 'a İsim Yaş Yazınız ! \n\n  Kayıt Sorumlusu Rolündeki yetkililer sizinle ilgilenicektir  \n\n  Hesabın Oluşturulma Tarihi:** " + moment(member.user.createdAt).format("YYYY **__DD MMMM dddd (hh:mm:ss)__**") +  "  \n\n"  + kontrol + " \n\n"  
   );
 });
 
@@ -175,11 +175,11 @@ client.on("guildMemberAdd", async (member) => {
       const ktarih = new Date().getTime() - gkisi.createdAt.getTime();   
 
     if (ktarih < 2592000001) {
-    member.addRole("ŞüphelİRolİD")
+    member.addRole("736325562078855188")
     
     }else{
     
-    member.addRole("KayıtsızRolİD")
+    member.addRole("736459047397621780")
     
       }
 });
@@ -187,10 +187,10 @@ client.on("guildMemberAdd", async (member) => {
 
 client.on("userUpdate", async (oldUser, newUser) => {
   if (oldUser.username !== newUser.username) {
-    let tag = "Tag"; //tagınız
-    let sunucu = "SunucuİD"; //sunucu ID
-    let kanal = "LogKanalİD" //log kanal id
-    let rol = "RolİD"; // rol ID
+    let tag = "✮"; //tagınız
+    let sunucu = "736325562078855188"; //sunucu ID
+    let kanal = "736477829163647026" //log kanal id
+    let rol = "959607792975638590"; // rol ID
     if (newUser.username.includes(tag) && !client.guilds.get(sunucu).members.get(newUser.id).roles.has(rol)) {
       client.channels.get(kanal).send(`${newUser} ${tag} tagını aldığı için <@&${rol}> rolünü kazandı!`)
       client.guilds.get(sunucu).members.get(newUser.id).addRole(rol)
