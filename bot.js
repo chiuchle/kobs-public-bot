@@ -154,7 +154,7 @@ client.on('guildMemberAdd', member => {
 
 //--------------------------------Hg Kanalı---------------------------------\\
 client.on("guildMemberAdd", member => {  
-  const kanal = "853310610078695485";
+  const kanal = "830553509073649684";
   let user = client.users.get(member.id);
   require("moment-duration-format");
     const kurulus = new Date().getTime() - user.createdAt.getTime();  
