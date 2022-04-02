@@ -139,7 +139,7 @@ client.on('message', async (msg, member, guild) => {
 
 /////OTOİSİM
 client.on('guildMemberAdd', member => {
- member.setNickname('İsimYaş')////YENI GELENLERE VERILCEK ISIM
+ member.setNickname('İsim | Yaş')////YENI GELENLERE VERILCEK ISIM
 })
 
 
@@ -147,14 +147,14 @@ client.on('guildMemberAdd', member => {
 
 ///HG MESAJI 
 client.on('guildMemberAdd', member => {
- member.send(`**Sunucumuza hoşgeldin, \n  \n Abone Olmayı Unutmayınız \n \n Davet linkimiz:** https://discord.gg/NP7Ar2j `);
+ member.send(`**Sunucumuza hoşgeldin**  `);
   
 }); 
 
 
 //--------------------------------Hg Kanalı---------------------------------\\
 client.on("guildMemberAdd", member => {  
-  const kanal = "KanalİD";
+  const kanal = "853310610078695485";
   let user = client.users.get(member.id);
   require("moment-duration-format");
     const kurulus = new Date().getTime() - user.createdAt.getTime();  
@@ -163,7 +163,7 @@ if (kurulus < 1296000000) kontrol = ' **__Bu Hesap Güvenilir Değil__** '
 if (kurulus > 1296000000) kontrol = ' **__Bu Hesap Güvenilir Gözüküyor__** '
   moment.locale("tr");
   let kobs = client.channels.get(kanal);
-kobs.send("**Hoşgeldin! " + member + " Seninle __\`" + member.guild.memberCount + "\`__ Kişiyiz \n\n  Sunucuya Kayıt Olmak İçin #💀 'a İsim Yaş Yazınız ! \n\n  Kayıt Sorumlusu Rolündeki yetkililer sizinle ilgilenicektir  \n\n  Hesabın Oluşturulma Tarihi:** " + moment(member.user.createdAt).format("YYYY **__DD MMMM dddd (hh:mm:ss)__**") +  "  \n\n"  + kontrol + " \n\n"  
+kobs.send("**:hammer: Hoşgeldin! " + member + " Seninle __\`" + member.guild.memberCount + "\`__ Kişiyiz \n\n  Sunucuya Kayıt Olmak İçin #💀 'a İsim Yaş Yazınız ! \n\n  Kayıt Sorumlusu Rolündeki yetkililer sizinle ilgilenicektir  \n\n  Hesabın Oluşturulma Tarihi:** " + moment(member.user.createdAt).format("YYYY **__DD MMMM dddd (hh:mm:ss)__**") +  "  \n\n"  + kontrol + " \n\n"  
   );
 });
 
