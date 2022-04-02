@@ -8,8 +8,8 @@ exports.run = async (client, message, args) => {
   let member = message.mentions.members.first();
   let isim = args[1]
   let yaş = args[2]
-  let al = "KayıtsızRolİD"; ///alınacak rol idsi
-  let ver = "ErkekRolİD"; ///verilecek rol idsi
+  let al = "736459047397621780"; ///alınacak rol idsi
+  let ver = "736342700235816960"; ///verilecek rol idsi
   if (!member) return message.channel.send("Bir Kullanıcı Etiketle");
   if (!isim) return message.channel.send("Bir İsim Girmelisin!");
   member.setNickname(`${isim}  [${yaş}]`);
@@ -23,7 +23,7 @@ exports.run = async (client, message, args) => {
     .setTitle("Kayıt Sistemi")
     .setThumbnail(message.author.avatarURL)
     .setDescription( `Kayıt Edilen Kullanıcı : **${member.user}** \n Kayıt Eden Yetkili : ${message.author.username} \n Kayıt Islemınde Verılen Rol : <@&${ver}> \n Alınan Rol : <@&${al}>`)
-client.channels.get('LogtutulacakKanalınİD').send(embed)
+client.channels.get('736477829163647026').send(embed)
 };
 
 exports.conf = {
